@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BlocoDeNotas</class>
+ <widget class="QMainWindow" name="BlocoDeNotas">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>842</width>
+    <height>576</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BlocoDeNotas</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>80</y>
+      <width>751</width>
+      <height>341</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>842</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArquivo">
+    <property name="title">
+     <string>Arquivo</string>
+    </property>
+    <addaction name="actionnovo"/>
+    <addaction name="actionabrir"/>
+    <addaction name="actionsalvar"/>
+    <addaction name="actionsalvar_como"/>
+    <addaction name="actionimprimir"/>
+    <addaction name="actionsair"/>
+   </widget>
+   <widget class="QMenu" name="menueditar">
+    <property name="title">
+     <string>Editar</string>
+    </property>
+    <addaction name="actionDesfazer"/>
+    <addaction name="actionRefazer"/>
+    <addaction name="actionCopiar"/>
+    <addaction name="actionRecortar"/>
+    <addaction name="actionColar"/>
+   </widget>
+   <widget class="QMenu" name="menuFormatar">
+    <property name="title">
+     <string>Formatar</string>
+    </property>
+    <addaction name="actionFonte"/>
+    <addaction name="actionCor"/>
+    <addaction name="actionCor_de_Fundo"/>
+   </widget>
+   <widget class="QMenu" name="menuSobre">
+    <property name="title">
+     <string>Sobre</string>
+    </property>
+    <addaction name="actionPrimeiro_Software_QT"/>
+   </widget>
+   <addaction name="menuArquivo"/>
+   <addaction name="menueditar"/>
+   <addaction name="menuFormatar"/>
+   <addaction name="menuSobre"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionnovo"/>
+   <addaction name="actionabrir"/>
+   <addaction name="actionsalvar"/>
+   <addaction name="actionsalvar_como"/>
+   <addaction name="actionimprimir"/>
+   <addaction name="actionDesfazer"/>
+   <addaction name="actionRefazer"/>
+   <addaction name="actionCopiar"/>
+   <addaction name="actionRecortar"/>
+   <addaction name="actionColar"/>
+   <addaction name="actionFonte"/>
+   <addaction name="actionCor"/>
+   <addaction name="actionCor_de_Fundo"/>
+   <addaction name="actionPrimeiro_Software_QT"/>
+   <addaction name="actionsair"/>
+  </widget>
+  <action name="actionnovo">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/icone/icones/new.png</normaloff>:/icone/icones/new.png</iconset>
+   </property>
+   <property name="text">
+    <string>novo</string>
+   </property>
+  </action>
+  <action name="actionabrir">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/icone/icones/abrir.png</normaloff>:/icone/icones/abrir.png</iconset>
+   </property>
+   <property name="text">
+    <string>abrir</string>
+   </property>
+  </action>
+  <action name="actionsalvar">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/icone/icones/save[.png</normaloff>:/icone/icones/save[.png</iconset>
+   </property>
+   <property name="text">
+    <string>salvar</string>
+   </property>
+  </action>
+  <action name="actionsalvar_como">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/icone/icones/image.png</normaloff>:/icone/icones/image.png</iconset>
+   </property>
+   <property name="text">
+    <string>salvar como</string>
+   </property>
+  </action>
+  <action name="actionimprimir">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/icone/icones/print.png</normaloff>:/icone/icones/print.png</iconset>
+   </property>
+   <property name="text">
+    <string>imprimir</string>
+   </property>
+  </action>
+  <action name="actionsair">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/icone/icones/corn_7409364.png</normaloff>:/icone/icones/corn_7409364.png</iconset>
+   </property>
+   <property name="text">
+    <string>sair</string>
+   </property>
+  </action>
+  <action name="actionDesfazer">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/icone/icones/gato1.png</normaloff>:/icone/icones/gato1.png</iconset>
+   </property>
+   <property name="text">
+    <string>Desfazer</string>
+   </property>
+  </action>
+  <action name="actionRefazer">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/icone/icones/redo.png</normaloff>:/icone/icones/redo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Refazer</string>
+   </property>
+  </action>
+  <action name="actionCopiar">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/icone/icones/instagram_6422200.png</normaloff>:/icone/icones/instagram_6422200.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copiar</string>
+   </property>
+  </action>
+  <action name="actionRecortar">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/icone/icones/cut.png</normaloff>:/icone/icones/cut.png</iconset>
+   </property>
+   <property name="text">
+    <string>Recortar</string>
+   </property>
+  </action>
+  <action name="actionColar">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/icone/icones/colar1.png</normaloff>:/icone/icones/colar1.png</iconset>
+   </property>
+   <property name="text">
+    <string>Colar</string>
+   </property>
+  </action>
+  <action name="actionFonte">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/icone/icones/font.png</normaloff>:/icone/icones/font.png</iconset>
+   </property>
+   <property name="text">
+    <string>Fonte</string>
+   </property>
+  </action>
+  <action name="actionCor">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/icone/icones/corfonte.png</normaloff>:/icone/icones/corfonte.png</iconset>
+   </property>
+   <property name="text">
+    <string> Cor da Fonte</string>
+   </property>
+  </action>
+  <action name="actionCor_de_Fundo">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/icone/icones/corfunfo.png</normaloff>:/icone/icones/corfunfo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cor de Fundo</string>
+   </property>
+  </action>
+  <action name="actionPrimeiro_Software_QT">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/icone/icones/qt.png</normaloff>:/icone/icones/qt.png</iconset>
+   </property>
+   <property name="text">
+    <string>Primeiro Software QT</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="recursos.qrc"/>
+ </resources>
+ <connections/>
+</ui>

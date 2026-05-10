@@ -1,0 +1,2 @@
+Nesta aula do dia 17/03/26 eu aprendi a colocar imagem no QtCreator e fiz esse programa que muda as imagens 
+

@@ -1,0 +1,35 @@
+<RCC>
+    <qresource prefix="/icone">
+        <file>icones/undo.png</file>
+        <file>icones/saveas.png</file>
+        <file>icones/save[.png</file>
+        <file>icones/redo.png</file>
+        <file>icones/qt.png</file>
+        <file>icones/print.png</file>
+        <file>icones/new.png</file>
+        <file>icones/info.png</file>
+        <file>icones/font.png</file>
+        <file>icones/desligar.png</file>
+        <file>icones/cut.png</file>
+        <file>icones/corfunfo.png</file>
+        <file>icones/corfonte.png</file>
+        <file>icones/copiar.png</file>
+        <file>icones/colar1.png</file>
+        <file>icones/abrir.png</file>
+        <file>icones/4c939c66ca25fdafa59300a8207f929c.png</file>
+        <file>icones/182f43015802eae4ce43d00cd66b2f6a.png</file>
+        <file>icones/b2a81d7a9d629c170cc816329438cfaf.png</file>
+        <file>icones/boneco-colecionavel-de-vinil-minions-sortido_991299.jpeg</file>
+        <file>icones/chimpanzeciberneticus.png</file>
+        <file>icones/corn_7409364.png</file>
+        <file>icones/gato1.png</file>
+        <file>icones/image.png</file>
+        <file>icones/images.jpeg</file>
+        <file>icones/images1.jpg</file>
+        <file>icones/images2.jpg</file>
+        <file>icones/instagram_6422200.png</file>
+        <file>icones/lga775.jpeg</file>
+        <file>icones/lga1155jpeg</file>
+        <file>icones/linedivision.png</file>
+    </qresource>
+</RCC>

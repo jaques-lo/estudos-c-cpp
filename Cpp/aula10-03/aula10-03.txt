@@ -1,0 +1,2 @@
+Nesta aula no dia 10/03/26 aprendi como que muda o texto de um Qlabel usando um QPushButton e como usar o Gridlayout
+

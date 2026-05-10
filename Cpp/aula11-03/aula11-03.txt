@@ -1,0 +1,2 @@
+Nesta aula no dia 11/03/26 aprendi a colocar outra janela ao fazer uma validação simples no QTcreator e como exercicio realizei um jogo da forca usando tudo que foi ensinado em aula 
+
