@@ -39,7 +39,7 @@ Consolidar os fundamentos de programação e lógica computacional com foco em *
 
 ### C++
 - [x] Hello World e diferenças em relação ao C
-- [ ] Classes e objetos (POO)
+- [x] Classes e objetos (POO)
 - [ ] Herança e polimorfismo
 - [ ] Templates
 - [ ] STL (Standard Template Library)
