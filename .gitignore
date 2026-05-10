@@ -1,0 +1,47 @@
+# ─── Binários compilados ───────────────────────────────
+*.o
+*.out
+*.exe
+*.a
+*.so
+*.dll
+
+# Executáveis sem extensão (Linux/Mac)
+# Ignora tudo que não tem ponto no nome dentro de bin/
+bin/
+build/
+debug/
+Debug/
+release/
+Release/
+
+# ─── Code::Blocks ──────────────────────────────────────
+*.depend
+*.layout
+*.cbtemp
+
+# ─── Qt Creator ────────────────────────────────────────
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.moc
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+Makefile
+Makefile.*
+*.tmp
+*.bak
+
+# Pastas de build do Qt
+build-*/
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+
+# ─── Sistema ───────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*~
