@@ -1,0 +1,22 @@
+# Qt build
+build/
+*.pro.user
+*.pro.user.*
+*.o
+*.moc
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
+Makefile
+*.autosave
+
+# Compilados
+*.exe
+*.app
+*.out
+*.a
+*.so
+*.dll
+
+# Banco de dados gerado em runtime (criado automaticamente ao rodar o app)
+db/

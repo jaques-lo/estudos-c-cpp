@@ -1,0 +1,55 @@
+Na aula do dia 12-05 fizemos um crud com verificação no banco de dados utilizando o SQLITE
+
+
+# Agenda — CRUD em C++ com Qt
+
+Projeto de agenda desenvolvido em C++ com Qt Creator, utilizando SQLite como banco de dados.
+
+## Funcionalidades
+
+- Login com autenticação via banco de dados
+- Cadastro de contatos
+- Interface gráfica com Qt Widgets
+
+## Como rodar
+
+### Pré-requisitos
+
+- [Qt Creator](https://www.qt.io/download) instalado
+- Módulo `QtSql` habilitado (já configurado no `Agenda.pro`)
+
+### Passos
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/agenda.git
+   ```
+2. Abra o arquivo `Agenda.pro` no Qt Creator
+3. Compile e execute (`Ctrl+R`)
+
+> O banco de dados SQLite é criado automaticamente na pasta `db/` ao rodar o app pela primeira vez. Não é necessário nenhuma configuração manual.
+
+## Login padrão
+
+| Usuário | Senha |
+|---------|-------|
+| `admin` | `1234` |
+
+## Estrutura do projeto
+
+```
+Agenda/
+├── main.cpp
+├── janelalogin.cpp / .h / .ui       # Tela de login
+├── janelaprincipal.cpp / .h / .ui   # Tela principal
+├── janelanovocontato.cpp / .h / .ui # Cadastro de contato
+├── Agenda.pro                        # Configuração do projeto Qt
+├── database/
+│   └── setup.sql                    # Estrutura do banco (referência)
+└── db/                              # Criada automaticamente (ignorada pelo git)
+    └── db_agenda                    # Banco SQLite gerado em runtime
+```
+
+## Banco de dados
+
+A estrutura da tabela está em `database/setup.sql`. O app cria o banco automaticamente, então você **não precisa rodar o SQL manualmente**.
