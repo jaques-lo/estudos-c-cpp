@@ -30,7 +30,7 @@ Consolidar os fundamentos de programação e lógica computacional com foco em *
 - [x] Hello World e estrutura básica
 - [x] Variáveis e tipos de dados
 - [x] Operadores aritméticos, relacionais e lógicos
-- [ ] Estruturas condicionais (`if`, `else`, `switch`)
+- [x] Estruturas condicionais (`if`, `else`, `switch`)
 - [ ] Laços de repetição (`for`, `while`, `do while`)
 - [ ] Funções e recursão
 - [ ] Arrays e strings
@@ -40,7 +40,7 @@ Consolidar os fundamentos de programação e lógica computacional com foco em *
 ### C++
 - [x] Hello World e diferenças em relação ao C
 - [x] Classes e objetos (POO)
-- [ ] Herança e polimorfismo
+- [x] Herança e polimorfismo
 - [ ] Templates
 - [ ] STL (Standard Template Library)
 
