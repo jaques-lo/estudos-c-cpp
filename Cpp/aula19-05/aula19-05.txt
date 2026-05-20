@@ -1,0 +1,1 @@
+Na aula do dia 12-05 fizemos um crud com verificação no banco de dados utilizando o DbBrowser, no dia 19-05 foi acrescentado as funcionalidades de adicionar contato e pesquisar contatos
