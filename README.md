@@ -46,7 +46,7 @@ Consolidar os fundamentos de programação e lógica computacional com foco em *
 
 ### Clone usando HTTPS
 ```bash
-git clone https://github.com/jaques-lo/logica-programacao-c-cpp.git
+git clone https://github.com/jaques-lo/estudos-c-cpp.git
 
 Entre na pasta do projeto
 
