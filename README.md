@@ -60,4 +60,13 @@ gcc nome_do_arquivo.c -o programa
 bash
 g++ nome_do_arquivo.cpp -o programa
 ./programa
-Ou abra o projeto no **Code::Blocks** (C) ou **Qt Creator** (C++) e compile pela IDE. --- **Este repositório é dedicado aos meus estudos em C e C++**, registrando minha evolução em lógica de programação e desenvolvimento. 📬 **Contato:** lorenzo.j.sprenger@gmail.com 🔗 **LinkedIn:** https://www.linkedin.com/in/lorenzo-jaques/ 📍 São Leopoldo, Rio Grande do Sul, Brasil > *"A melhor forma de aprender a programar é programando todo dia."*
+Ou abra o projeto no **Code::Blocks** (C) ou **Qt Creator** (C++) e compile pela IDE. 
+---
+**Este repositório é dedicado aos meus estudos em C e C++**, registrando minha evolução em lógica de programação e desenvolvimento. 
+---
+📬 **Contato:** lorenzo.j.sprenger@gmail.com 
+🔗 **LinkedIn:** https://www.linkedin.com/in/lorenzo-jaques/ 
+📍 São Leopoldo, Rio Grande do Sul, Brasil
+---
+
+ *"A melhor forma de aprender a programar é programando todo dia."*
