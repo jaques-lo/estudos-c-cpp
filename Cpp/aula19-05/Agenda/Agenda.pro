@@ -9,6 +9,7 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    janelaeditar.cpp \
     janelalogin.cpp \
     janelanovocontato.cpp \
     janelapesquisar.cpp \
@@ -16,12 +17,14 @@ SOURCES += \
     janelaprincipal.cpp
 
 HEADERS += \
+    janelaeditar.h \
     janelalogin.h \
     janelanovocontato.h \
     janelapesquisar.h \
     janelaprincipal.h
 
 FORMS += \
+    janelaeditar.ui \
     janelalogin.ui \
     janelanovocontato.ui \
     janelapesquisar.ui \

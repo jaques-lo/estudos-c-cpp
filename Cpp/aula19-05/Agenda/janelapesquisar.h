@@ -15,6 +15,11 @@ public:
     explicit JanelaPesquisar(QWidget *parent = nullptr);
     ~JanelaPesquisar();
 
+private slots:
+    void on_btn_excluir_clicked();
+
+    void on_btn_editar_clicked();
+
 private:
     Ui::JanelaPesquisar *ui;
 };

@@ -9,7 +9,7 @@ JanelaLogin::JanelaLogin(QWidget *parent)
 {
     ui->setupUi(this);
     //    QString end_banco = "/CaminhoDoArquivoDoDb/Agenda/db_agenda";
-    QString end_banco = "/home/usuario/Documentos/estudos-c-cpp/Cpp/aula19-05/db_agenda";
+    QString end_banco = "/home/usuario/Documentos/estudos-c-cpp/Cpp/aula19-05/Agenda/db_agenda";
     bancoDeDados.setDatabaseName(end_banco);
 
     if(!bancoDeDados.open()){

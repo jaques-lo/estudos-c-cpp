@@ -1,6 +1,9 @@
 #include "janelapesquisar.h"
 #include "ui_janelapesquisar.h"
+#include<qmessagebox.h>
 #include <QtSql>
+#include "janelaeditar.h"
+
 JanelaPesquisar::JanelaPesquisar(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::JanelaPesquisar)
@@ -38,4 +41,39 @@ JanelaPesquisar::JanelaPesquisar(QWidget *parent)
 JanelaPesquisar::~JanelaPesquisar()
 {
     delete ui;
+}
+
+void JanelaPesquisar::on_btn_excluir_clicked()
+{
+    int linha = ui->tw_contatos->currentRow();
+    int id = ui->tw_contatos->item(linha, 0)->text().toInt();
+
+    QSqlQuery query;
+    query.prepare("delete from tb_contatos where id='"+QString::number(id)+"'");
+    if(query.exec()){
+        ui->tw_contatos->removeRow(linha);
+        QMessageBox::information(this, "", "Registro Removido");
+    }else{
+        QMessageBox::warning(this, "Erros", "Erro ao excluir");
+    }
+}
+
+void JanelaPesquisar::on_btn_editar_clicked()
+{
+    int linha = ui->tw_contatos->currentRow();
+    int id = ui->tw_contatos->item(linha, 0)->text().toUInt();
+    JanelaEditar editar(id);
+    editar.exec();
+
+    QSqlQuery query;
+    query.prepare("select * from tb_contatos where id='"+QString::number(id)+"'");
+    if(query.exec()){
+        query.first();
+        ui->tw_contatos->setItem(linha,1,new QTableWidgetItem(query.value(1).toString()) );
+        ui->tw_contatos->setItem(linha,2,new QTableWidgetItem(query.value(3).toString()) );
+        ui->tw_contatos->setItem(linha,3,new QTableWidgetItem(query.value(3).toString()) );
+    }else{
+        QMessageBox::warning(this, "ERROR", "Não foi possivel atualizar a tabela");
+    }
+
 }
