@@ -1,72 +1,97 @@
-# 📚 Lógica de Programação — C & C++
+# 📚 Estudos de Lógica de Programação em C e C++
 
-Repositório de exercícios e projetos desenvolvidos durante meus estudos de lógica de programação em **C** e **C++**. O conteúdo é atualizado continuamente conforme avanço nos estudos.
+Repositório dedicado aos exercícios, desafios e projetos desenvolvidos durante meus estudos de lógica de programação utilizando **C** e **C++**. O conteúdo é atualizado continuamente conforme avanço na aprendizagem e no desenvolvimento de novas habilidades.
 
 ---
 
 ## 🎯 Objetivo
 
-Consolidar os fundamentos de programação e lógica computacional com foco em **C** e **C++**, linguagens de alto desempenho amplamente utilizadas em sistemas embarcados, desenvolvimento de software de baixo nível e aplicações desktop. Este repositório registra minha evolução e faz parte do meu portfólio profissional.
+Este repositório tem como objetivo consolidar os fundamentos da programação e da lógica computacional por meio das linguagens **C** e **C++**, amplamente utilizadas no desenvolvimento de sistemas, aplicações de alto desempenho, software embarcado e programação de baixo nível.
+
+Além de servir como ambiente de prática, este projeto também registra minha evolução como desenvolvedor e compõe meu portfólio profissional.
 
 ---
 
-## 🛠️ Ambiente de desenvolvimento
+## 🛠️ Ambiente de Desenvolvimento
 
-| Ferramenta | Uso |
-|---|---|
-| **Code::Blocks** | IDE principal para exercícios em C |
-| **Qt Creator** | IDE para projetos em C++ |
-| **GCC / G++** | Compiladores |
-| **Vim** | Editor auxiliar no terminal |
-| **Git + GitHub** | Versionamento e sincronização entre máquinas |
-| **DB Browser** | Banco de dados |
+| Ferramenta            | Finalidade                            |
+| --------------------- | ------------------------------------- |
+| Code::Blocks          | Desenvolvimento de exercícios em C    |
+| Qt Creator            | Desenvolvimento de projetos em C++    |
+| GCC / G++             | Compiladores                          |
+| Vim                   | Edição de código via terminal         |
+| Git + GitHub          | Controle de versão                    |
+| DB Browser for SQLite | Manipulação de bancos de dados SQLite |
 
-<div align="left"> 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="50" alt="cplusplus logo" />
+<div align="left">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="50" alt="C++" />
 <img width="12" />
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1920px-C_Programming_Language.svg.png" height="50" alt="c logo" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" height="50" alt="C" />
 <img width="12" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="50" alt="git logo" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="50" alt="Git" />
 <img width="12" />
-<img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-white-icon.png" height="50" alt="github logo" />
+<img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-white-icon.png"" height="50" alt="GitHub" />
 <img width="12" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/qt/qt-original.svg" height="50" alt="qt logo" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/qt/qt-original.svg" height="50" alt="Qt" />
 <img width="12" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg" height="50" alt="vim logo" />
-<img width="12" />  
-<img src="https://dashboard.snapcraft.io/site_media/appmedia/2018/08/icon.svg.png" height="50" alt="db logo" />
-<img width="12" />  
-<img src="https://img.icons8.com/color/600/code-blocks.png" height="50" alt="CodeBlocks" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg" height="50" alt="Vim" />
 </div>
 
 ---
 
+## 📥 Clonando o Repositório
 
-## 📥 Como clonar o repositório
+### HTTPS
 
-### Clone usando HTTPS
 ```bash
 git clone https://github.com/jaques-lo/estudos-c-cpp.git
-
-Entre na pasta do projeto
-
 cd estudos-c-cpp
 ```
-## Como compilar e rodar ### C (usando GCC no terminal)
-bash
-gcc nome_do_arquivo.c -o programa
-./programa
-### C++ (usando G++ no terminal)
-bash
-g++ nome_do_arquivo.cpp -o programa
-./programa
-Ou abra o projeto no **Code::Blocks** (C) ou **Qt Creator** (C++) e compile pela IDE. 
----
-**Este repositório é dedicado aos meus estudos em C e C++**, registrando minha evolução em lógica de programação e desenvolvimento. 
----
-📬 **Contato:** lorenzo.j.sprenger@gmail.com 
-🔗 **LinkedIn:** https://www.linkedin.com/in/lorenzo-jaques/ 
-📍 São Leopoldo, Rio Grande do Sul, Brasil
+
 ---
 
- *"A melhor forma de aprender a programar é programando todo dia."*
+## Compilação e Execução
+
+### C (GCC)
+
+```bash
+gcc arquivo.c -o programa
+./programa
+```
+
+### C++ (G++)
+
+```bash
+g++ arquivo.cpp -o programa
+./programa
+```
+
+Também é possível abrir os projetos diretamente no **Code::Blocks** ou **Qt Creator** e realizar a compilação pela interface gráfica.
+
+---
+
+## Evolução
+
+O repositório é atualizado frequentemente com:
+
+* Exercícios de lógica de programação
+* Estruturas de decisão
+* Estruturas de repetição
+* Vetores e matrizes
+* Funções
+* Ponteiros
+* Estruturas de dados
+* Programação Orientada a Objetos (C++)
+* Projetos práticos para fixação dos conceitos
+
+---
+
+## 📬 Contato
+
+📧 E-mail: **[lorenzo.j.sprenger@gmail.com](mailto:lorenzo.j.sprenger@gmail.com)**
+🔗 LinkedIn: **[www.linkedin.com/in/lorenzo-jaques](http://www.linkedin.com/in/lorenzo-jaques)**
+📍 São Leopoldo - RS, Brasil
+
+---
+
+> *"A melhor forma de aprender a programar é escrever código todos os dias."*
