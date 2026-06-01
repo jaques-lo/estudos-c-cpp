@@ -77,3 +77,31 @@ void JanelaPesquisar::on_btn_editar_clicked()
     }
 
 }
+
+void JanelaPesquisar::on_btn_pesquisar_clicked()
+{
+    //adicionando o pesquisar
+    QString pesquisa = ui->edt_pesquisar->text();
+
+    QSqlQuery query;
+    query.prepare("SELECT * FROM tb_contatos WHERE nome LIKE :nome");
+    query.bindValue(":nome", "%" + pesquisa + "%");
+
+    if(query.exec()){
+        ui->tw_contatos->setRowCount(0);
+        int linha = 0;
+        while (query.next()){
+            ui->tw_contatos->insertRow(linha);
+
+            ui->tw_contatos->setItem(linha, 0, new QTableWidgetItem(query.value(0).toString()));
+            ui->tw_contatos->setItem(linha, 1, new QTableWidgetItem(query.value(1).toString()));
+            ui->tw_contatos->setItem(linha, 2, new QTableWidgetItem(query.value(2).toString()));
+            ui->tw_contatos->setItem(linha, 3, new QTableWidgetItem(query.value(3).toString()));
+
+            linha++;
+        }
+    }else{
+        QMessageBox::warning(this,"ERROR", "nao foi possivel pesquisar os dados");
+    }
+}
+
