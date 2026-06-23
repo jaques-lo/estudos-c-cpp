@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>JanelaNovoLivro</class>
+ <widget class="QDialog" name="JanelaNovoLivro">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>539</width>
+    <height>478</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Fundo da Janela */
+QDialog {
+    background-color: #0F172A;
+}
+
+/* Textos (Labels) */
+QLabel {
+    color: #94A3B8;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Campos de Digitação */
+QLineEdit {
+    background-color: #1E293B;
+    color: #F8FAFC;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Efeito quando o campo está selecionado para digitar */
+QLineEdit:focus {
+    border: 2px solid #3B82F6;
+    background-color: #0F172A;
+}
+
+/* --- BOTÃO GRAVAR (Verde Sucesso) --- */
+#btn_gravar {
+    background-color: #10B981; 
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+}
+#btn_gravar:hover { background-color: #34D399; }
+#btn_gravar:pressed { background-color: #059669; }
+
+/* --- BOTÃO CANCELAR (Cinza Secundário) --- */
+#btn_cancelar {
+    background-color: transparent;
+    color: #CBD5E1;
+    border: 1px solid #475569;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+}
+#btn_cancelar:hover { background-color: #1E293B; color: #FFFFFF; border: 1px solid #64748B; }
+#btn_cancelar:pressed { background-color: #334155; }</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>60</y>
+     <width>431</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Titulo:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="edt_titulo"/>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Editora:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="edt_editora"/>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Autor:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="edt_autor"/>
+      </item>
+     </layout>
+    </item>
+    <item row="3" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Ano:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="edt_ano"/>
+      </item>
+     </layout>
+    </item>
+    <item row="4" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Codigo:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="edt_codigo"/>
+      </item>
+     </layout>
+    </item>
+    <item row="5" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>Quantidade:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="edt_quantidade"/>
+      </item>
+     </layout>
+    </item>
+    <item row="6" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_7">
+      <item>
+       <widget class="QPushButton" name="btn_gravar">
+        <property name="text">
+         <string>Gravar</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_cancelar">
+        <property name="text">
+         <string>Cancelar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

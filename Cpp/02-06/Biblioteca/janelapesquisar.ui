@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>JanelaPesquisar</class>
+ <widget class="QDialog" name="JanelaPesquisar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>724</width>
+    <height>547</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Fundo da Janela */
+QDialog {
+    background-color: #0F172A;
+}
+
+/* Textos e Inputs básicos */
+QLabel { color: #94A3B8; font-weight: bold; font-family: 'Segoe UI'; font-size: 13px; }
+QLineEdit {
+    background-color: #1E293B; color: #F8FAFC; border: 1px solid #334155;
+    border-radius: 6px; padding: 8px; font-size: 14px;
+}
+QLineEdit:focus { border: 1px solid #8B5CF6; }
+
+/* --- TABELA (Estilo Moderno) --- */
+QTableWidget {
+    background-color: #1E293B;
+    color: #E2E8F0;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    gridline-color: #334155;
+    selection-background-color: #3B82F6; /* Cor da linha selecionada */
+    selection-color: #FFFFFF;
+    font-family: 'Segoe UI', Arial;
+    font-size: 13px;
+    outline: none; /* Tira borda de foco pontilhada nativa */
+}
+
+/* Cabeçalho da Tabela */
+QHeaderView::section {
+    background-color: #0F172A;
+    color: #94A3B8;
+    border: none;
+    border-bottom: 2px solid #334155;
+    padding: 6px;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/* Scrollbar da Tabela (Fica bem mais elegante) */
+QScrollBar:vertical {
+    border: none; background-color: #0F172A; width: 12px; border-radius: 6px;
+}
+QScrollBar::handle:vertical {
+    background-color: #475569; min-height: 20px; border-radius: 6px; margin: 2px;
+}
+QScrollBar::handle:vertical:hover { background-color: #64748B; }
+
+/* --- BOTÕES --- */
+QPushButton {
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 8px 16px;
+    color: white;
+    border: none;
+}
+
+/* Botão Pesquisar (Roxo/Indigo) */
+#btn_pesquisar { background-color: #6366F1; }
+#btn_pesquisar:hover { background-color: #818CF8; }
+#btn_pesquisar:pressed { background-color: #4F46E5; }
+
+/* Botão Editar (Azul) */
+#btn_editar { background-color: #3B82F6; }
+#btn_editar:hover { background-color: #60A5FA; }
+#btn_editar:pressed { background-color: #2563EB; }
+
+/* Botão Excluir (Vermelho Perigo) */
+#btn_excluir { background-color: #EF4444; }
+#btn_excluir:hover { background-color: #F87171; }
+#btn_excluir:pressed { background-color: #DC2626; }</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>80</y>
+     <width>581</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Pesquisar:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="edt_pesquisar"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_pesquisar">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>Pesquisar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <widget class="QTableWidget" name="tw_livros">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="btn_excluir">
+        <property name="text">
+         <string>Excluir</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_editar">
+        <property name="text">
+         <string>Editar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

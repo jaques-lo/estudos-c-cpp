@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>JanelaEditar</class>
+ <widget class="QDialog" name="JanelaEditar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>576</width>
+    <height>441</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Fundo da Janela */
+QDialog {
+    background-color: #0F172A;
+}
+
+/* Textos e Inputs básicos */
+QLabel { color: #94A3B8; font-weight: bold; font-family: 'Segoe UI'; font-size: 13px; }
+QLineEdit {
+    background-color: #1E293B; color: #F8FAFC; border: 1px solid #334155;
+    border-radius: 6px; padding: 8px; font-size: 14px;
+}
+QLineEdit:focus { border: 1px solid #8B5CF6; }
+
+/* --- TABELA (Estilo Moderno) --- */
+QTableWidget {
+    background-color: #1E293B;
+    color: #E2E8F0;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    gridline-color: #334155;
+    selection-background-color: #3B82F6; /* Cor da linha selecionada */
+    selection-color: #FFFFFF;
+    font-family: 'Segoe UI', Arial;
+    font-size: 13px;
+    outline: none; /* Tira borda de foco pontilhada nativa */
+}
+
+/* Cabeçalho da Tabela */
+QHeaderView::section {
+    background-color: #0F172A;
+    color: #94A3B8;
+    border: none;
+    border-bottom: 2px solid #334155;
+    padding: 6px;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/* Scrollbar da Tabela (Fica bem mais elegante) */
+QScrollBar:vertical {
+    border: none; background-color: #0F172A; width: 12px; border-radius: 6px;
+}
+QScrollBar::handle:vertical {
+    background-color: #475569; min-height: 20px; border-radius: 6px; margin: 2px;
+}
+QScrollBar::handle:vertical:hover { background-color: #64748B; }
+
+/* --- BOTÕES --- */
+QPushButton {
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 8px 16px;
+    color: white;
+    border: none;
+}
+
+/* Botão Pesquisar (Roxo/Indigo) */
+#btn_pesquisar { background-color: #6366F1; }
+#btn_pesquisar:hover { background-color: #818CF8; }
+#btn_pesquisar:pressed { background-color: #4F46E5; }
+
+/* Botão Editar (Azul) */
+#btn_editar { background-color: #3B82F6; }
+#btn_editar:hover { background-color: #60A5FA; }
+#btn_editar:pressed { background-color: #2563EB; }
+
+/* Botão Excluir (Vermelho Perigo) */
+#btn_excluir { background-color: #EF4444; }
+#btn_excluir:hover { background-color: #F87171; }
+#btn_excluir:pressed { background-color: #DC2626; }</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>90</y>
+     <width>233</width>
+     <height>330</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0" colspan="2">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Titulo:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="edt_titulo"/>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Autor:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="edt_editora"/>
+      </item>
+     </layout>
+    </item>
+    <item row="3" column="0" colspan="2">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Ano:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="edt_autor"/>
+      </item>
+     </layout>
+    </item>
+    <item row="4" column="0" colspan="2">
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Editora:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="edt_ano"/>
+      </item>
+     </layout>
+    </item>
+    <item row="5" column="0" colspan="2">
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Quantidade:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="edt_codigo"/>
+      </item>
+     </layout>
+    </item>
+    <item row="6" column="0" colspan="2">
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>Codigo:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="edt_quantidade"/>
+      </item>
+     </layout>
+    </item>
+    <item row="7" column="0">
+     <widget class="QPushButton" name="btn_gravar">
+      <property name="text">
+       <string>gravar</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QPushButton" name="btn_cancelar">
+      <property name="text">
+       <string>cancelar</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="lbl_id">
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
